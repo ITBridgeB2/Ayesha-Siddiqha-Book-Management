@@ -47,33 +47,3 @@ export default function CategoryList() {
 
 
 
-// import { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
-// import axios from 'axios';
-
-// export default function CategoryList() {
-//   const [categories, setCategories] = useState([]);
-
-//   useEffect(() => {
-//     axios.get(`http://localhost:5000/books`)
-//       .then(res => {
-//         const genres = [...new Set(res.data.map(book => book.genre))];
-//         setCategories(genres);
-//       });
-//   }, []);
-
-//   return (
-//     <div style={{ padding: '24px', maxWidth: '600px', margin: 'auto' }}>
-//       <h2>Browse by Category</h2>
-//       <ul style={{ listStyle: 'none', padding: 0 }}>
-//         {categories.map((genre, idx) => (
-//           <li key={idx} style={{ marginBottom: '10px' }}>
-//             <Link to={`/categories/${encodeURIComponent(genre)}`} style={{ color: '#2563eb', textDecoration: 'none', fontWeight: 'bold' }}>
-//               {genre}
-//             </Link>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
